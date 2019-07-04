@@ -1,4 +1,4 @@
-## LifeOnScreen/nova-google2fa
+## 383project/nova-google2fa
 
 This package enforces 2FA for Laravel Nova.
 

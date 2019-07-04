@@ -1,6 +1,6 @@
 # The license
 
-Copyright 2018 LifeOnScreen Global Limited and other contributors, 
+Copyright 2019 383 Project Limited and other contributors, 
 https://383project.com
 
 Permission is hereby granted, free of charge, to any person obtaining
