@@ -26,8 +26,8 @@ class Google2fa
         if (!config('383project2fa.enabled')) {
             return $next($request);
         }
-        if ($request->path() === 'los/2fa/confirm' || $request->path() === 'los/2fa/authenticate'
-            || $request->path() === 'los/2fa/register') {
+        if ($request->path() === '2fa/confirm' || $request->path() === '2fa/authenticate'
+            || $request->path() === '2fa/register') {
             return $next($request);
         }
         $authenticator = app(Google2FAAuthenticator::class)->boot($request);
