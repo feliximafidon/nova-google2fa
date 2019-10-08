@@ -20,11 +20,11 @@ This package enables 2FA on Laravel Nova.
 
 ### Recovery
 
-- If user enters invalid code, recovery button is shown.
+- If user enters an invalid code, recovery button is shown.
 
 ![Enter 2FA](docs/images/invalid-code.png)
 
-- User enters recovery code.
+- User enters a recovery code.
 
 ![Enter 2FA](docs/images/enter-recovery-code.png)
 
