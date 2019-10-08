@@ -32,7 +32,7 @@ This package enables 2FA on Laravel Nova.
 
 ## Installation
 
-Install via composer
+Installation is only available via composer
 
 ``` composer.json
 "repositories": [
