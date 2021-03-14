@@ -54,5 +54,5 @@ return [
     /** 
      * Session key (page) to redirect to after login
      */
-    'session_redirect_key' => 'nova.redirect',
+    'session_redirect' => 'nova.redirect',
 ];
