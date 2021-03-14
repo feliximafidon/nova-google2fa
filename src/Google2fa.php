@@ -46,7 +46,9 @@ class Google2fa extends Tool
             $authenticator = app(Google2FAAuthenticator::class);
             $authenticator->login();
 
-            return response()->redirectTo(config('nova.path'));
+            if ($key = config('383project2fa.session_redirect')) $path = request()->session()->pull($key);
+
+            return response()->redirectTo($path ?? config('nova.path'));
         }
 
         $google2fa = new G2fa;
@@ -137,7 +139,9 @@ class Google2fa extends Tool
             $authenticator = app(Google2FAAuthenticator::class);
             $authenticator->login();
 
-            return response()->redirectTo(config('nova.path'));
+            if ($key = config('383project2fa.session_redirect')) $path = request()->session()->pull($key);
+
+            return response()->redirectTo($path ?? config('nova.path'));
         }
         $data['error'] = 'One time password is invalid.';
 
